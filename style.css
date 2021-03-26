@@ -105,7 +105,8 @@ nav a :hover{
 
 #navigation a{
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
+	font-family: 'Noto Sans', sans-serif;
 	padding-left:10px;
     text-decoration: none; 
 	border:2px solid black ;
