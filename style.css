@@ -163,14 +163,7 @@ main > a{
 	"footer footer";
 	justify-items: stretch;
 } */
-.project{
-	grid-column: 1/4;
-	/* padding-left: 37px; */
-	width: 100%;
-	max-width: 400px;
-	height: auto;
-	margin-bottom: 20px;	
-}
+
 
 main > div > a{
 	display: flex;
@@ -298,6 +291,14 @@ footer > p {
 	margin-top: 32px;
 }
 
+.project{
+	grid-column: 1/4;
+	/* padding-left: 37px; */
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	margin-bottom: 20px;	
+}
 
 #description{
 	font-family: 'Roboto', sans-serif;
