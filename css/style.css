@@ -62,15 +62,18 @@ h5{
 	padding: 10px 36px 16px 37px;
 }
 
-nav{
+nav a{
 	display: flex;
     flex-direction: column;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 16px;
+	color: rgb(0, 0, 0);
 	line-height: 22px;
+	padding-left: 37px;
 	padding-right: 36px;
 	/* padding: 25px 0;  */
 }
+
 /* li{
 	background-color: #ffffff;
 	border: 2px solid black;
@@ -103,14 +106,11 @@ nav a :hover{
 #navigation a{
 	display: flex;
     flex-direction: column;
-    transition: 0.3s; 
 	padding-left:10px;
-    width: 100%; 
     text-decoration: none; 
-    font-size: 16px;
-	color: black;
 	border:2px solid black ;
 	margin-bottom:10px;
+	margin-right: 36px;
    
 }
 
@@ -118,9 +118,9 @@ nav a :hover{
 	color: white; 
 	background-color: #3E3E3E;}
 
-.active{
-		color: white; 
-		background-color: #3E3E3E;}
+.current{
+	color: white; 
+	background-color: #3E3E3E;}
 
 		
 
@@ -139,7 +139,7 @@ main > a{
 	font-style:bold;
 	text-decoration: none;
 	font-size: 16px;
-	color: #3874f4;
+	color: #0336a4;
 	padding-left: 37px;
 }
 
