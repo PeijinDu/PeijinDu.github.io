@@ -164,11 +164,11 @@ main > a{
 	justify-items: stretch;
 } */
 .project{
-	display: flex;
-	flex-direction: column;
+	grid-column: 1/4;
 	/* padding-left: 37px; */
 	width: 100%;
-	max-height: 248px;
+	max-width: 400px;
+	height: auto;
 	margin-bottom: 20px;	
 }
 
@@ -290,11 +290,11 @@ footer > p {
 	padding-top: 30px;
 }
 
-.work{
-	display: flex;
-	flex-direction: column;
+.work, .team{
+	grid-column: 1/4;
 	width: 100%;
-	max-height: 90px;
+    max-width: 400px;
+	height: auto;
 	margin-top: 32px;
 }
 
