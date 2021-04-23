@@ -386,32 +386,44 @@ footer > p {
 		padding-top: 100px;
 	}
 
-	/* li a::after{
-		content: '';
-		position: absolute;
-		display: block;
-		height: 0.4em;
-		width: 0%;
-		background-color: #3E3E3E;
-	}
-
-	li a:hover::after{
-		width: 100%;
-	}
-
-	li:first-child{
-		
-	} */
 
 	main > p{
 		font-family: 'Open San', sans-serif;
 		font-weight: lighter;
-		color:#737373;
+		color: #3E3E3E;
 		font-size: 30px;
 		line-height: 40px;
 		text-align: center;
 		padding: 60px 120px 60px 100px;
+
+		animation-duration: 4s;
+		animation-name: slidein;
 	}
+
+	/* #animation{
+		font-family: 'Open San', sans-serif;
+		font-weight: lighter;
+		color: #3E3E3E;
+		font-size: 30px;
+		line-height: 40px;
+		text-align: center;
+		padding: 60px 120px 60px 100px;
+		animation-duration: 4s;
+		animation-name: slidein;
+	} */
+
+	@keyframes slidein {
+		from {
+		  margin-right: 100%;
+		  width: 300%;
+		}
+	  
+		to {
+		  margin-right: 0%;
+		  width: 100%;
+		}
+	  }
+	 
 
 	.project{
 		/* padding-left: 37px; */
@@ -493,7 +505,7 @@ footer > p {
 		grid-column: 2/3;
 		grid-row: 1/2;
 		font-family: 'Roboto', sans-serif;
-		color:#737373;
+		color:#505050;
 		font-size: 18px;
 		line-height: 20px;
 		padding-top: 20%;
@@ -510,6 +522,7 @@ footer > p {
 		font-size: 24px;
 		color: hsla(172, 12%, 46%, 0.98);	
 	}
+
 	.Button{
 		display: block;
 		grid-column: 2/3;
@@ -520,14 +533,14 @@ footer > p {
 	}
 	.button{
 		display: block;
-		background-color: hsla(172, 20%, 65%, 0.98);
+		background-color: hsla(172, 15%, 28%, 0.98);
 		border: none;
 		color: white;
 		padding: 16px 32px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 16px;
+		font-size: 20px;
 		margin: 4px 2px;
 		cursor: pointer;
 	}
@@ -673,6 +686,61 @@ footer > p {
 	    text-align: center;
 		color: hsla(172, 20%, 65%, 0.98);
 	}
-
 	
+	.container_contact{
+		font-family: 'Open Sans', sans-serif;
+		font-style: bold;
+		padding: 50px 100px;
+		margin-left: 140px;
+		margin-right: 140px;
+		border-radius: 10px;
+		background-color:hsla(0, 0%, 95%, 0.98);
+		
+	}
+
+	input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+	  }
+	  
+	  input[type=submit] {
+		background-color:hsla(171, 15%, 42%, 0.98);
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	  }
+	  
+	  input[type=submit]:hover {
+		background-color: hsla(172, 15%, 28%, 0.98);
+	  }
+	  
+	  .container {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+	  }
+	
+	  @media screen and (prefers-reduced-motion: reduce){
+		html{
+			scroll-behavior: auto; 
+		}
+	  
+		.parallax{
+		  -webkit-transition: none; 
+		  transition: none;       
+		 }
+	  
+		
+		.parallax{
+		  background-attachment: initial;
+		}
+	  }
 }
